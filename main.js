@@ -48,10 +48,12 @@ let currentIndex = 0;
 function initializeGallery() {
     const peopleGallery = document.getElementById('people-gallery');
     const streetGallery = document.getElementById('street-gallery');
+    const blackwhiteGallery = document.getElementById('blackwhite-gallery');
     
     // Get all images from galleries
     const peopleImages = Array.from(peopleGallery.querySelectorAll('.gallery-image'));
     const streetImages = Array.from(streetGallery.querySelectorAll('.gallery-image'));
+    const blackwhiteImages = Array.from(blackwhiteGallery.querySelectorAll('.gallery-image'));
     
     // Add click event listeners
     peopleImages.forEach((img, index) => {
@@ -60,6 +62,10 @@ function initializeGallery() {
     
     streetImages.forEach((img, index) => {
         img.addEventListener('click', () => openLightbox(streetImages, index));
+    });
+    
+    blackwhiteImages.forEach((img, index) => {
+        img.addEventListener('click', () => openLightbox(blackwhiteImages, index));
     });
 }
 

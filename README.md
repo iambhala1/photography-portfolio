@@ -1,6 +1,6 @@
 # Photography Portfolio Website
 
-A clean, minimalist, and mobile-responsive photography portfolio website showcasing People and Street photography.
+A clean, minimalist, and mobile-responsive photography portfolio website showcasing People, Street, and Black & White photography.
 
 ## Project Structure
 
@@ -13,7 +13,8 @@ photography-website/
 │   └── main.js        # Interactive features (lightbox, navigation)
 ├── images/
 │   ├── people/        # People section photos
-│   └── street/        # Street section photos
+│   ├── street/        # Street section photos
+│   └── blackwhite/    # Black & White section photos
 └── README.md          # This file
 ```
 
@@ -41,6 +42,10 @@ photography-website/
 2. **Street Section Photos:**
    - Place all your street photography images in the `images/street/` folder
    - Name them: `street-01.jpg`, `street-02.jpg`, `street-03.jpg`, etc.
+
+3. **Black & White Section Photos:**
+   - Place all your black and white photography images in the `images/blackwhite/` folder
+   - Name them: `blackwhite-01.jpg`, `blackwhite-02.jpg`, `blackwhite-03.jpg`, etc.
 
 ### Step 3: Update HTML File
 
@@ -73,6 +78,22 @@ Find the `<div class="gallery" id="street-gallery">` section and add your images
     </div>
     <div class="gallery-item">
         <img src="images/street/street-02.jpg" alt="Street photography description" loading="lazy" class="gallery-image">
+    </div>
+    <!-- Add more images as needed -->
+</div>
+```
+
+#### For Black & White Section:
+
+Find the `<div class="gallery" id="blackwhite-gallery">` section and add your images:
+
+```html
+<div class="gallery" id="blackwhite-gallery">
+    <div class="gallery-item">
+        <img src="images/blackwhite/blackwhite-01.jpg" alt="Black & White photography description" loading="lazy" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+        <img src="images/blackwhite/blackwhite-02.jpg" alt="Black & White photography description" loading="lazy" class="gallery-image">
     </div>
     <!-- Add more images as needed -->
 </div>
