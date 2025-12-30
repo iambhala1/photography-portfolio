@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography portfolio showcasing People and Street photography">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">Photography</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#people" class="nav-link">People</a></li>
+                <li><a href="#street" class="nav-link">Street</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Capturing Moments</h1>
+            <p class="hero-subtitle">People & Street Photography</p>
+        </div>
+    </section>
+
+    <!-- People Section -->
+    <section id="people" class="section">
+        <div class="container">
+            <h2 class="section-title">People</h2>
+            <p class="section-description">Human photography that captures emotion, expression, and the essence of humanity.</p>
+            <div class="gallery" id="people-gallery">
+                <!-- Photos will be added here -->
+                <!-- Example structure:
+                <div class="gallery-item">
+                    <img src="images/people/people-01.jpg" alt="People photography" loading="lazy" class="gallery-image">
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Street Section -->
+    <section id="street" class="section">
+        <div class="container">
+            <h2 class="section-title">Street</h2>
+            <p class="section-description">Candid street photography capturing life as it unfolds in urban environments.</p>
+            <div class="gallery" id="street-gallery">
+                <!-- Photos will be added here -->
+                <!-- Example structure:
+                <div class="gallery-item">
+                    <img src="images/street/street-01.jpg" alt="Street photography" loading="lazy" class="gallery-image">
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Photography Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+        <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="" class="lightbox-img">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
